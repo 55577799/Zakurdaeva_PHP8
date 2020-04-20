@@ -38,7 +38,7 @@ function getConnect()
     static $link;
 
     if (empty($link)) {
-        $link = mysqli_connect('127.0.0.1', 'homestead', 'secret', 'homestead');
+        $link = mysqli_connect('localhost', 'root', '', 'gbphp');
         mysqli_query($link, 'set names utf8');
     }
 
